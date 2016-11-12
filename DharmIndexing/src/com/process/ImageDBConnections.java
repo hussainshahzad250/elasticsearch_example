@@ -11,6 +11,7 @@ public class ImageDBConnections {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://" + ip + ":3306/" + dbName;
 			con = DriverManager.getConnection(url, username, password);
+			System.out.println("Database Connection Successfull....");
 		} catch (Exception e) {
 		}
 		return con;
